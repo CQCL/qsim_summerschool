@@ -1,0 +1,6 @@
+pytket
+matplotlib
+pytket-qiskit
+pytket-cirq
+pytket-quantinuum
+jupyterlab
