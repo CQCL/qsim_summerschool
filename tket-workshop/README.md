@@ -1,10 +1,11 @@
-# tket-workshop
+# qsim-workshop
+
+There are some introductory pytket exercises and an example running the QCELS algorithm explained in the slides
 
 To install the requirements to run the notebook run the following.
 
 ```
-git clone git@github.com:CalMacCQ/tket-workshop.git
-cd tket-workshop
+git clone https://github.com/CQCL/qsim_summerschool.git
 pip install -r requirements.txt
 ```
 
