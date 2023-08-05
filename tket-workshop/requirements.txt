@@ -4,3 +4,4 @@ pytket-qiskit
 pytket-cirq
 pytket-quantinuum
 jupyterlab
+pandas
