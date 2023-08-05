@@ -14,11 +14,9 @@ class ControlledPauliExpBox(CircBox):
         Create a unitary circuit encapsulated inside a pytket.circuit.CircBox, 
         which encodes an ancilla-controlled pauli-exponential acting over N-qubits.
         Args:
-            paulis (List[Pauli]): A sum of pauli-exponents to trotterized and encode. 
-                The sequence in which pauli-exponents are trotterized is the sequence 
-                in which they appear in the underlying QubitPauliOperator dictionary.
-            ancilla (Qubit): a single ancilla qubit, which has to be in the same register as the state.
-                Here we always assume that the qubit with the highest index in the register is the ancilla
+            paulis: List of Pauli operators to be applied to each qubit
+            qubits_idx: List of qubits to apply the paulis to
+            rotation: Symbolic rotation angle
         """
         if len(qubits_idx) != len(paulis):
             raise RuntimeError("Qubits should be same length as pauli")
